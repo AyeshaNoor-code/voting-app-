@@ -1,0 +1,52 @@
+voting application
+what??
+A functionality where users can cast vote to candidates
+
+
+
+Models??
+Routes??
+
+
+voting app functionality:
+1. user sign in/ sign up
+2. list of candidates
+3. one voter can vote just once
+4. A route for live votes , realtime
+5. user must contain cnic number,  password
+6. one admin who will maintain list of candidates and admin will not be able to vote
+7. users can change username and password
+8. cnic number and password are must for login
+____________________________________________________________________________________________________________________
+
+
+ Routes:
+
+
+ 1.Voting:
+ /candidates-------------------get-------------get the list of candidates
+ /vote/:cadidate_id------------post------------vote for specific candidate
+
+
+ 2.voters Authentication:
+/sign up-----------------------post------------create new user account
+/log in------------------------post------------log in existing account [cnic nuber, password]-----Tokens
+
+
+
+3.Vote Counts:
+/vote/counts--------------------get-------------List of votes sorted on basis of vote counts
+
+
+
+4.User's Profile:
+/profile------------------------get-------------get user's profile information
+/profile/:password--------------put-------------change user's password
+
+
+
+ 5.Admin candidate Management:
+/candidates---------------------post------------create a new candidates
+/candidates/:candidate_id--------put-------------update an existing candidate
+/candidate/:cadidate_id---------delete----------Delete a candidate from the list
+
